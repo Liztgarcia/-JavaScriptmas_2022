@@ -13,11 +13,10 @@ Example output: "I'M 😱 ALMOST 😱 OUT 😱 OF 😱 COFFEE!"
 */
 
 
+// My function
+const panic = (sentence)=>sentence.split(' ').length === 1 ? sentence.toUpperCase() + '!' : sentence.toUpperCase().split(' ').join(' 😱 ') + '!';
 
 // Test your function
+console.log(panic("Hello")); 
 console.log(panic("I'm almost out of coffee")); 
-console.log(panic("winter is coming"))
-
-function panic(s) {
-    return s.toUpperCase().split(' ').join(' 😱 ') + '!';
-}
+console.log(panic("winter is coming"));
